@@ -1,5 +1,4 @@
 const form = document.querySelector("form");
-const userContainer = document.getElementById("user-container");
 const inputs = document.querySelectorAll(
   'input[type="text"], input[type="password"]'
 );
