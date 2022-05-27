@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: #638bad;
+}
+#form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 0;
+  padding: 4rem 2rem 2rem;
+  background: #e2e2e2;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 3px 10px #46525e9d;
+}
+#form::before {
+  content: "";
+  height: 90px;
+  width: 90px;
+  background: linear-gradient(90deg, #525d92, #51b9d5);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0 3px 10px #46525e6f;
+}
+.pseudo-container,
+.mail-container,
+.pass-container,
+.pass-confirme-container {
+  display: flex;
+  flex-direction: column;
+}
+#form label {
+  margin-bottom: 8px;
+  color: rgb(85, 91, 100);
+}
+.input {
+  margin: 0 0 1.3rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  background: #cccccc;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: #191919;
+  box-shadow: 0 3px 10px #a8aaac25;
+}
+#submit {
+  border-radius: 10rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 3rem;
+  margin: 1rem auto;
+  background: linear-gradient(90deg, #525d92, #51b9d5);
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 100ms ease-in;
+  box-shadow: 0 3px 10px #a8aaaca5;
+}
+#submit:hover {
+  background: linear-gradient(90deg, #7b84b3, #90d4e7);
+  color: #ecebeb;
+  /* border: 2px solid white; */
+  box-shadow: 0 -3px 10px #a8aaaca5;
+}
+span {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 0.8rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  color: red;
+}
+.error input {
+  color: red;
+  border: 1px solid red;
+}
+.progressRed {
+  background: red;
+  width: 33%;
+  visibility: visible;
+}
+.progressRed {
+  background: red;
+  width: 33%;
+  visibility: visible;
+}
+.progressRed {
+  background: rgb(73, 179, 106);
+  width: 100%;
+  visibility: visible;
+}

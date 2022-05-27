@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: #0000;
+  margin: 0;
+  padding: 0;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #638bad;
+}
+
+#form {
+  width: 360px;
+  background: #e2e2e2;
+  border-radius: 20px;
+  flex-direction: column;
+  margin: 4rem auto 0;
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  position: relative;
+  box-shadow: 0 3px 10px #46525e9d;
+}
+
+#form:before {
+  content: "";
+  height: 90px;
+  width: 90px;
+  background: linear-gradient(90deg, #525d92, #51b9d5);
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 3px 10px #46525e6f;
+}
+
+.pseudo-container, .mail-container, .pass-container, .pass-confirme-container {
+  flex-direction: column;
+  display: flex;
+}
+
+#form label {
+  color: #555b64;
+  margin-bottom: 8px;
+}
+
+.input {
+  height: 3rem;
+  color: #191919;
+  background: #ccc;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 0 1.3rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 3px 10px #a8aaac25;
+}
+
+#submit {
+  width: 9rem;
+  height: 3rem;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #525d92, #51b9d5);
+  border: none;
+  border-radius: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: all .1s ease-in;
+  display: flex;
+  box-shadow: 0 3px 10px #a8aaaca5;
+}
+
+#submit:hover {
+  color: #ecebeb;
+  background: linear-gradient(90deg, #7b84b3, #90d4e7);
+  box-shadow: 0 -3px 10px #a8aaaca5;
+}
+
+span {
+  visibility: hidden;
+  opacity: 0;
+  color: red;
+  margin-bottom: 20px;
+  font-size: .8rem;
+  transition: all .3s;
+  display: block;
+}
+
+.error input {
+  color: red;
+  border: 1px solid red;
+}
+
+.progressRed {
+  width: 33%;
+  visibility: visible;
+  width: 33%;
+  visibility: visible;
+  width: 100%;
+  visibility: visible;
+  background: #49b36a;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
